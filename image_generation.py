@@ -63,7 +63,7 @@ def generate_images(prompts, directory, model):
     Generates images based on a list of prompts and saves them to the specified directory.
     @param prompts: list of prompts to generate images from (prompt is a str or dict with a "prompt" key)
     @param directory: directory name in which to save the images
-    @param model: model to use for image generation. Options: "DALL-E", "SD", "BFL"(cheapest, thus best for testing)
+    @param model: model to use for image generation. Options: "OPENAI", "SD", "BFL"
     @return tuple: (num_generated, num_not_generated)
     """
     prompts_json_path = os.path.join(directory, "prompts.json")
